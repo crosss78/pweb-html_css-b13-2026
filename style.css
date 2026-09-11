@@ -1,0 +1,483 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: #ffffff;
+  color: #1e293b;
+  line-height: 1.6;
+}
+
+.wadah-web {
+  display: grid;
+  grid-template-columns: 380px 1fr;
+  min-height: 100vh;
+}
+
+/* Section 1 */
+.profil-samping {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  background-color: #141618;
+  border-right: 1px solid #23272f;
+  padding: 3rem 2.2rem 2rem 2.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-y: auto;
+}
+
+.kotak-foto {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.foto-profil {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.foto-profil:hover {
+  transform: scale(1.05);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.nama-tokoh {
+  font-size: 1.55rem;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.35rem;
+}
+
+.jabatan-tokoh {
+  font-size: 0.95rem;
+  color: #94a3b8;
+  line-height: 1.4;
+  margin-bottom: 1.25rem;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background: #23272f;
+  margin-bottom: 1.25rem;
+}
+
+.profile-bio {
+  font-size: 0.9rem;
+  color: #cbd5e1;
+  line-height: 1.65;
+}
+
+.profile-bio em {
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.kumpulan-medsos {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.tombol-medsos {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #94a3b8;
+  border: 1px solid #23272f;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.tombol-medsos:hover {
+  background-color: #ffffff;
+  color: #0f172a;
+  transform: translateY(-2px);
+}
+
+.tombol-medsos:active {
+  transform: translateY(0);
+}
+
+.teks-copyright {
+  font-size: 0.75rem;
+  color: #64748b;
+  line-height: 1.5;
+}
+
+.main-content {
+  padding: 3.5rem 4.5rem;
+  max-width: 1100px;
+}
+
+/* Section 2*/
+.bagian-pembuka {
+  padding-bottom: 3.5rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.area-tombol-cv {
+  margin-bottom: 2rem;
+}
+
+.tombol-ke-cv {
+  display: inline-block;
+  background-color: #1e293b;
+  color: #ffffff;
+  padding: 0.8rem 1.6rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.25s ease, transform 0.25s ease;
+}
+
+.tombol-ke-cv:hover {
+  background-color: #0f172a;
+  transform: translateY(-2px);
+}
+
+.wadah-banner {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+  margin-bottom: 2rem;
+  background-color: #e2e8f0;
+}
+
+.sumber-banner {
+  position: absolute;
+  bottom: 8px;
+  left: 10px;
+  font-size: 0.7rem;
+  color: #64748b;
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 2px 8px;
+  border-radius: 4px;
+  border: 1px solid #e2e8f0;
+}
+
+.gambar-banner {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.wadah-banner:hover .gambar-banner {
+  transform: scale(1.02);
+}
+
+.judul-pembuka {
+  font-size: 2.25rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.25;
+  color: #0f172a;
+  margin-bottom: 1.75rem;
+}
+
+.paragraf-pembuka p {
+  font-size: 1.05rem;
+  color: #64748b;
+  line-height: 1.8;
+  margin-bottom: 1.25rem;
+}
+
+.paragraf-pembuka strong {
+  color: #1e293b;
+  font-weight: 600;
+}
+
+.tombol-pelajari {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #0284c7;
+  text-decoration: none;
+  margin-top: 0.5rem;
+  transition: color 0.25s ease;
+}
+
+.tombol-pelajari:hover {
+  color: #0369a1;
+  text-decoration: underline;
+}
+
+/* Section 3*/
+.bagian-ceo {
+  padding: 3.5rem 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.area-judul-bagian {
+  margin-bottom: 2rem;
+}
+
+.judul-bagian {
+  font-size: 1.65rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 0.35rem;
+}
+
+.subjudul-bagian {
+  font-size: 0.95rem;
+  color: #64748b;
+}
+
+.daftar-kartu-ceo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.kartu-ceo {
+  background: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.kartu-ceo:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 32px -8px rgba(15, 23, 42, 0.08);
+}
+
+.wadah-gambar-kartu {
+  position: relative;
+  width: 100%;
+  height: 180px;
+  background-color: #e2e8f0;
+  overflow: hidden;
+}
+
+.gambar-kartu {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.kartu-ceo:hover .gambar-kartu {
+  transform: scale(1.05);
+}
+
+.lapisan-view {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(15, 23, 42, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.25s ease;
+}
+
+.kartu-ceo:hover .lapisan-view {
+  opacity: 1;
+  visibility: visible;
+}
+
+.tombol-view {
+  display: inline-block;
+  background-color: #10b981;
+  color: #ffffff;
+  padding: 0.5rem 1.4rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transform: translateY(8px);
+  transition: all 0.25s ease;
+}
+
+.kartu-ceo:hover .tombol-view {
+  transform: translateY(0);
+}
+
+.tombol-view:hover {
+  background-color: #059669;
+}
+
+.isi-kartu {
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.judul-kartu {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #0b38a0;
+  line-height: 1.35;
+  margin-bottom: 0.6rem;
+}
+
+.penjelasan-kartu {
+  font-size: 0.88rem;
+  color: #64748b;
+  line-height: 1.6;
+}
+
+/* Section 4*/
+.bagian-inovasi {
+  padding: 3.5rem 0 1rem 0;
+}
+
+.daftar-inovasi {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+}
+
+.kartu-inovasi {
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: border-color 0.25s ease, background-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.kartu-inovasi:hover {
+  background-color: #ffffff;
+  border-color: #cbd5e1;
+  transform: translateY(-4px);
+  box-shadow: 0 16px 32px -8px rgba(15, 23, 42, 0.08);
+}
+
+.wadah-gambar-inovasi {
+  position: relative;
+  width: 100%;
+  height: 110px;
+  background-color: #e2e8f0;
+  overflow: hidden;
+}
+
+.gambar-inovasi {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.kartu-inovasi:hover .gambar-inovasi {
+  transform: scale(1.06);
+}
+
+.isi-inovasi {
+  padding: 1.2rem 1.1rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.angka-capaian {
+  font-size: 1.85rem;
+  font-weight: 800;
+  color: #0f172a;
+  letter-spacing: -0.03em;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.judul-capaian {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #334155;
+  margin-bottom: 0.35rem;
+}
+
+.keterangan-capaian {
+  font-size: 0.78rem;
+  color: #64748b;
+  line-height: 1.45;
+}
+
+/* Responsif */
+@media (max-width: 1024px) {
+  .wadah-web {
+    grid-template-columns: 300px 1fr;
+  }
+
+  .main-content {
+    padding: 2.5rem;
+  }
+
+  .daftar-kartu-ceo {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .daftar-inovasi {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .wadah-web {
+    grid-template-columns: 1fr;
+  }
+
+  .profil-samping {
+    position: relative;
+    height: auto;
+    padding: 2.5rem 1.5rem;
+    border-right: none;
+    border-bottom: 1px solid #23272f;
+  }
+
+  .main-content {
+    padding: 2rem 1.25rem;
+  }
+
+  .judul-pembuka {
+    font-size: 1.75rem;
+  }
+
+  .daftar-kartu-ceo {
+    grid-template-columns: 1fr;
+  }
+
+  .daftar-inovasi {
+    grid-template-columns: 1fr;
+  }
+}
