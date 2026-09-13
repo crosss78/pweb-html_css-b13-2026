@@ -468,6 +468,174 @@ body {
   }
 }
 
+/* SECTION 5 & 6 */
+.bagian-kontak {
+  padding: 40px 0 16px 0;
+}
+
+.grid-kontak {
+  display: grid;
+  grid-template-columns: 620px 1fr;
+  gap: 32px;
+  
+}
+
+.formulir-kontak {
+  background-color: #112250;
+  border: 1px solid #3C507D;
+  border-radius: 14px;
+  padding: 28px;
+}
+
+.grup-input {
+  margin-bottom: 18px;
+}
+
+.label-input {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  color: #E0C58F;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+}
+
+.kolom-input {
+  width: 100%;
+  background-color: #0b1533;
+  border: 1px solid #3C507D;
+  border-radius: 8px;
+  padding: 12px 14px;
+  font-family: inherit;
+  font-size: 14px;
+  color: #F5F0E9;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease;
+}
+
+.kolom-input::placeholder {
+  color: #6d7ba0;
+}
+
+.kolom-input:focus {
+  outline: none;
+  border-color: #E0C58F;
+}
+
+.kolom-pesan {
+  resize: vertical;
+  min-height: 110px;
+}
+
+.tombol-kirim {
+  background-color: #E0C58F;
+  color: #112250;
+  border: none;
+  padding: 14px 29px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.tombol-kirim:hover {
+  background-color: #F5F0E9;
+}
+
+.kartu-info-kontak {
+  background-color: #112250;
+  border: 1px solid #3C507D;
+  border-radius: 14px;
+  padding: 28px;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.judul-info-kontak {
+  margin-top: 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: #F5F0E9;
+  margin-bottom: 22px;
+}
+
+.baris-info {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.ikon-info {
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+.label-info {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  color: #E0C58F;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.isi-info {
+  margin: 0;
+  font-size: 14px;
+  color: #D9CBC2;
+  line-height: 1.5;
+}
+
+.pratinjau-peta {
+  position: relative;
+  width: 100%;
+  height: 160px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #3C507D;
+}
+
+.peta-embed {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  filter: grayscale(35%) invert(90%) contrast(90%);
+}
+
+.label-pratinjau-peta {
+  position: absolute;
+  bottom: 8px;
+  left: 10px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #112250;
+  background-color: rgba(224, 197, 143, 0.95);
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.tautan-peta {
+  display: inline-block;
+  margin-top: 4px;
+  color: #E0C58F;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.tautan-peta:hover {
+  color: #F5F0E9;
+}
+
+@media (max-width: 900px) {
+  .grid-kontak {
+    grid-template-columns: 100%;
+  }
+}
+
 @media (max-width: 750px) {
   .isi-atas {
     padding: 14px 20px;
