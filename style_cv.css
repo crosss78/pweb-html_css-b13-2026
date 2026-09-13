@@ -15,11 +15,13 @@ body {
     line-height: 1.6;
 }
 
-/* SECTION 7 - Top Action Bar & Career Summary Metrics */
-.top-bar {
+.pembungkus {
     max-width: 1000px;
-    margin: 30px auto 20px auto;
+    margin: 0 auto;
+    padding: 30px 32px;
 }
+
+/* SECTION 7 - Top Action Bar & Career Summary Metrics */
 
 .back-button {
     display: inline-flex;
@@ -241,12 +243,6 @@ body {
 .link-menu:hover,
 .link-menu.aktif {
     color: #E0C58F; 
-}
-
-.pembungkus {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 30px 20px;
 }
 
 .container, 
