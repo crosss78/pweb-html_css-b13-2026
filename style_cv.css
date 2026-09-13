@@ -41,14 +41,80 @@ body {
     border-color: #E0C58F;
 }
 
-.metrics-container {
+.cv-header {
     max-width: 1000px;
     margin: 0 auto 30px auto;
     background: #0b1533;
-    padding: 32px 40px;
     border-radius: 16px;
     box-shadow: 0 12px 28px rgba(0, 0, 0, 0.5);
     border: 1px solid #3C5070;
+    overflow: hidden;
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    padding: 28px 40px;
+    border-bottom: 1px solid #3C5070;
+}
+
+.profile-photo-frame {
+    position: relative;
+    flex-shrink: 0;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #E0C58F;
+}
+
+.profile-photo {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-eyebrow {
+    font-size: 12px;
+    font-weight: 700;
+    color: #E0C58F;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+}
+
+.profile-name {
+    font-size: 28px;
+    font-weight: 800;
+    color: #F5F0E9;
+    margin: 0 0 6px 0;
+    letter-spacing: -0.5px;
+}
+
+.profile-title {
+    font-size: 14px;
+    color: #D9CBC2;
+    margin: 0;
+    line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+    .profile-container {
+        flex-direction: column;
+        text-align: center;
+        padding: 28px 20px;
+    }
+}
+
+.metrics-container {
+    padding: 32px 40px;
 }
 
 .metrics-grid {
