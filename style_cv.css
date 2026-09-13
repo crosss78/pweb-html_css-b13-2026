@@ -18,7 +18,7 @@ body {
 .pembungkus {
     max-width: 1000px;
     margin: 0 auto;
-    padding: 30px 32px;
+    padding: 24px 32px 64px 32px;
 }
 
 /* SECTION 7 - Top Action Bar & Career Summary Metrics */
